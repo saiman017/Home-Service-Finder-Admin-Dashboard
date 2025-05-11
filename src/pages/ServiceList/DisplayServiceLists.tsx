@@ -1,4 +1,3 @@
-// DisplayServiceLists.tsx
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import type { AppDispatch, RootState } from "../../store/store";
@@ -14,9 +13,9 @@ import ServiceListForm from "./ServiceListForm";
 import { notifySuccess, notifyError } from "../../Toastify/Toastify";
 
 interface Row {
-  key: string; // service id
-  category: string; // category name
-  serviceName: string; // service list name
+  key: string;
+  category: string;
+  serviceName: string;
 }
 
 export default function DisplayServiceLists() {
